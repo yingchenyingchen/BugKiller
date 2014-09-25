@@ -16,6 +16,7 @@ public class ObjectGrabber : MonoBehaviour {
 	{
 		if (!Input.GetMouseButton (0))
 		{
+
 			if(handsFull)
 				dropObjects ();
 			return;
