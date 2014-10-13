@@ -26,21 +26,23 @@ public class ObjectGrabber : MonoBehaviour {
 		
 		RaycastHit hit = new RaycastHit ();
 		
-		if (!Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition),  out hit, 5))
-			//print ("c");
-			return;
+		if (!Physics.Raycast (Camera.main.ScreenPointToRay (Input.mousePosition), out hit, 500)) {
+						print ("a");
+						return;
+				}
 
 		Rigidbody body = hit.rigidbody;
 
 		// We need to hit a rigidbody that is not kinematic and is tagged as 'Grabbable"
-		if (!body || body.isKinematic)
-			//print ("a");
-			return;
-
+		if (!body || body.isKinematic) {
+						print ("b");
+						return;
+				}
 		//we need some way to ensure that we do not try to pick up very heavy objects.  Should we simply choose not to tag such objects as grabbable?
-		if (body.mass > liftWeightLimit)
-			//print ("b");
-			return;
+		if (body.mass > liftWeightLimit) {
+						print ("c");
+						return;
+				}
 
 		if (playerStandingOn(body))
 		{
