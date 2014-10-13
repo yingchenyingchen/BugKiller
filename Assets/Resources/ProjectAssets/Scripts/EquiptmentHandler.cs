@@ -15,8 +15,6 @@ public class EquiptmentHandler : MonoBehaviour {
 	void Update () {
 		if (EquiptmentHeld && Input.GetMouseButtonDown(0))
 						ActivateEquiptmentHeld ();
-		if(Input.GetKeyDown("1"))
-		   Equip (EquiptmentHeld);
 
 	}
 
@@ -31,7 +29,9 @@ public class EquiptmentHandler : MonoBehaviour {
 
 	public void Unequip()
 	{
-		DestroyImmediate(EquiptmentHeld);
+		if(EquiptmentHeld)
+			DestroyImmediate(EquiptmentHeld.gameObject);
+		EquiptmentHeld = null;
 	}
 
 
