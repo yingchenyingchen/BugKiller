@@ -33,17 +33,13 @@ public class HUD : MonoBehaviour {
 	{
 		AddQuickItem (e1);
 		AddQuickItem (e2);
+		print (quickInventory.Count);
 	}
 
 	void Update() 
 	{
 		//Screen.lockCursor = true;
 		updateQuickItemGui ();
-		char keyPressed = Input.inputString [0];
-		print (keyPressed);
-		if (char.IsDigit (keyPressed))
-						selectionGridInt = (int)char.GetNumericValue (keyPressed) -1;
-
 	}
 
 	void OnGUI(){
@@ -95,9 +91,19 @@ public class HUD : MonoBehaviour {
 		quickInventory.Add (e);
 	}
 
+	public void SetQuickItemSelection(int selection)
+	{
+		selectionGridInt = selection - 1;
+	}
+
+	public Equiptment GetQuickItemSelected()
+	{
+		return quickInventory [selectionGridInt];
+	}
+
     private void updateQuickItemGui()
 	{
-		for (int i = 0; i < selectionStrings.Length -1 && i < quickInventory.Count -1 ; i++)
+		for (int i = 0; i < selectionStrings.Length -1 && i < quickInventory.Count; i++)
 			selectionStrings [i] = quickInventory [i] != null ? quickInventory [i].transform.name.ToString() : i.ToString() ;
 	}
 	
