@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SprayCan :  Equiptment {
+public class SprayCan :  Equipment {
 	void Start ()
 	{
 		if (!gameObject.particleSystem)

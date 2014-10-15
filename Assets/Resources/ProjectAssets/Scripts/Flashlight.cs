@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Flashlight : Equiptment {
+public class Flashlight : Equipment {
 
 	public Light lightBulb;
 
@@ -14,7 +14,8 @@ public class Flashlight : Equiptment {
 	void Update () {
 	
 	}
-
+	
+	//toggle lightbulb
 	public override void Activate()
 	{
 		lightBulb.enabled = !lightBulb.enabled;

@@ -1,16 +1,17 @@
-﻿using UnityEngine;
+﻿//NEEDS CLEANING:  Hud quick select slots should be data-bound to underlying quickInventory data structure. Quick inventory should be made into
+//custom data structure which autofills any 'empty' slots with our default 'empty hand' item.  This 'empty hand' item should contain the 'carry object'
+//and 'grab object' scripts!  Without and empty hand, our character cannot grab things!
+
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
 public class HUD : MonoBehaviour {
 
-	public List<Equiptment> quickInventory = new List<Equiptment> ();
-	public Equiptment e1;
-	public Equiptment e2;
-
+	public List<Equipment> quickInventory = new List<Equipment> ();
+	public Equipment e1;
+	public Equipment e2;
 	
-
-
 	//Menu Variables
 	private bool MenuOpen = false;
 	int MenuWidthStart = (Screen.width/2)-75;
@@ -86,7 +87,7 @@ public class HUD : MonoBehaviour {
 		
 	}//end OnGui
 
-	public void AddQuickItem(Equiptment e)
+	public void AddQuickItem(Equipment e)
 	{
 		quickInventory.Add (e);
 	}
@@ -96,15 +97,18 @@ public class HUD : MonoBehaviour {
 		selectionGridInt = selection - 1;
 	}
 
-	public Equiptment GetQuickItemSelected()
+	public Equipment GetQuickItemSelected()
 	{
 		return quickInventory [selectionGridInt];
 	}
 
     private void updateQuickItemGui()
 	{
-		for (int i = 0; i < selectionStrings.Length -1 && i < quickInventory.Count; i++)
-			selectionStrings [i] = quickInventory [i] != null ? quickInventory [i].transform.name.ToString() : i.ToString() ;
+		for (int i = 0; i < selectionStrings.Length -1; i++)
+			if (i > quickInventory.Count - 1)
+				selectionStrings [i] = "item " + i; 
+			else
+				selectionStrings [i] = quickInventory [i] != null ? quickInventory [i].transform.name.ToString() : i.ToString() ;
 	}
 	
 }

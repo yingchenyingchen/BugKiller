@@ -4,17 +4,22 @@ using System.Collections;
 public class PlayerController : MonoBehaviour {
 
 	public GameObject rightHand;
-	EquiptmentHandler equiptmentHandler;
-	HUD hud;
+	EquipmentHandler equipmentHandler;
+	HUD2 hud;
+	private MouseLook _mouseLook;
+	private FPSInputController _fpsController;
+	private CharacterMotor _characterMotor;
 		
 	// Use this for initialization
 	void Start () {
-		equiptmentHandler = gameObject.AddComponent<EquiptmentHandler>();
-		equiptmentHandler.RightHand = rightHand;
-		hud = gameObject.AddComponent<HUD>();
-		//Equiptment e = (Equiptment)Instantiate (Resources.Load ("ProjectAssets/prefabs/Flashlight", typeof(Equiptment)));
-		hud.AddQuickItem((Equiptment)Resources.Load ("ProjectAssets/prefabs/Flashlight", typeof(Equiptment)));
-		hud.AddQuickItem((Equiptment)Resources.Load ("ProjectAssets/prefabs/SprayCan", typeof(Equiptment)));
+		equipmentHandler = gameObject.AddComponent<EquipmentHandler>();
+		equipmentHandler.RightHand = rightHand;
+		hud = gameObject.AddComponent<HUD2>();
+		hud.AddQuickItem((Equipment)Resources.Load ("ProjectAssets/prefabs/Flashlight", typeof(Equipment)));
+		hud.AddQuickItem((Equipment)Resources.Load ("ProjectAssets/prefabs/SprayCan", typeof(Equipment)));
+		_mouseLook = gameObject.AddComponent<MouseLook> ();
+		_characterMotor = gameObject.AddComponent<CharacterMotor> ();
+		_fpsController = gameObject.AddComponent<FPSInputController> ();
 
 	}
 
@@ -25,9 +30,25 @@ public class PlayerController : MonoBehaviour {
 		if (char.IsDigit (keyPressed)) 
 		{
 			hud.SetQuickItemSelection((int)char.GetNumericValue (keyPressed));
-			Equiptment e = hud.GetQuickItemSelected();
-			equiptmentHandler.Equip(e);
+			Equipment e = hud.GetQuickItemSelected();
+			equipmentHandler.Equip(e);
 		}
-		//update Equiptment
+		//update Equipment
+	}
+
+	void FreezePlayer()
+	{
+		_mouseLook.enabled = false;
+		_fpsController.enabled = false;
+		_characterMotor.enabled = false;
+		gameObject.GetComponent<CharacterController> ().enabled = false;
+	}
+
+	void UnfreezePlayer()
+	{
+		_mouseLook.enabled = true;
+		_fpsController.enabled = true;
+		_characterMotor.enabled = true;
+		gameObject.GetComponent<CharacterController> ().enabled = true;
 	}
 }
