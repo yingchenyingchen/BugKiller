@@ -2,10 +2,12 @@
 using System.Collections;
 
 public class SprayCan :  Equipment {
+
+	public GameObject SprayNozzle;
 	void Start ()
 	{
-		if (!gameObject.particleSystem)
-						gameObject.AddComponent ("ParticleSystem");
+		if (!SprayNozzle.particleSystem)
+			SprayNozzle.AddComponent ("ParticleSystem");
 	}
 	
 	
@@ -14,14 +16,14 @@ public class SprayCan :  Equipment {
 
 		 if (!Input.GetMouseButton(0))
 		{
-			gameObject.particleSystem.enableEmission = false;
-			gameObject.particleSystem.Stop();
+			SprayNozzle.particleSystem.enableEmission = false;
+			SprayNozzle.particleSystem.Stop();
 		}
 	}
 
 	public override void Activate()
 	{
-		gameObject.particleSystem.enableEmission = true;
-		gameObject.particleSystem.Play();
+		SprayNozzle.particleSystem.enableEmission = true;
+		SprayNozzle.particleSystem.Play();
 	}
 }
