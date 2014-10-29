@@ -8,10 +8,10 @@ using System.Collections.Generic;
 
 public class HUD : MonoBehaviour {
 
-	public List<Equipment> quickInventory = new List<Equipment> ();
+	public QuickInventory quickInventory = new QuickInventory(10);
 	public Equipment e1;
 	public Equipment e2;
-	
+
 	//Menu Variables
 	private bool MenuOpen = false;
 	int MenuWidthStart = (Screen.width/2)-75;
@@ -32,8 +32,6 @@ public class HUD : MonoBehaviour {
 
 	void Start()
 	{
-		AddQuickItem (e1);
-		AddQuickItem (e2);
 		print (quickInventory.Count);
 	}
 
@@ -87,9 +85,9 @@ public class HUD : MonoBehaviour {
 		
 	}//end OnGui
 
-	public void AddQuickItem(Equipment e)
+	public void AddQuickItem(int i, Equipment e)
 	{
-		quickInventory.Add (e);
+		quickInventory.SetItem (i,e);
 	}
 
 	public void SetQuickItemSelection(int selection)

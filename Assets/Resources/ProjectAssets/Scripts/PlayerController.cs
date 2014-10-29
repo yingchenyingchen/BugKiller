@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour {
 	public GameObject rightHand;
 	public GameObject leftHand;
 	EquipmentHandler equipmentHandler;
-	HUD2 hud;
+	HUD hud;
 	private MouseLook _mouseLook;
 	private FPSInputController _fpsController;
 	private CharacterMotor _characterMotor;
@@ -16,9 +16,9 @@ public class PlayerController : MonoBehaviour {
 		equipmentHandler = gameObject.AddComponent<EquipmentHandler>();
 		equipmentHandler.RightHand = rightHand;
 		equipmentHandler.LeftHand = leftHand;
-		hud = gameObject.AddComponent<HUD2>();
-		hud.AddQuickItem((Equipment)Resources.Load ("ProjectAssets/prefabs/Flashlight", typeof(Equipment)));
-		hud.AddQuickItem((Equipment)Resources.Load ("ProjectAssets/prefabs/SprayCan", typeof(Equipment)));
+		hud = gameObject.AddComponent<HUD>();
+		hud.AddQuickItem(0,(Equipment)Resources.Load ("ProjectAssets/prefabs/Flashlight", typeof(Equipment)));
+		hud.AddQuickItem(1,(Equipment)Resources.Load ("ProjectAssets/prefabs/SprayCan", typeof(Equipment)));
 		_mouseLook = gameObject.AddComponent<MouseLook> ();
 		_characterMotor = gameObject.AddComponent<CharacterMotor> ();
 		_fpsController = gameObject.AddComponent<FPSInputController> ();
@@ -34,19 +34,19 @@ public class PlayerController : MonoBehaviour {
 		if (char.IsDigit (keyPressed)) 
 		{
 			hud.SetQuickItemSelection((int)char.GetNumericValue (keyPressed));
-			//Equipment e = hud.GetQuickItemSelected();
-
-			StartCoroutine("waitForEquip", keyPressed);
+			Equipment e = hud.GetQuickItemSelected();
+			equipmentHandler.EquipLeft(e);
+			//StartCoroutine("waitForEquip", keyPressed);
 		}
 		//update Equipment
 	}
 
 	public void waitForEquip(char keyPressed)
 	{
-		print (keyPressed.ToString ());
+		string keyName = "Quick" + keyPressed;
 		//add ui showing that item is awaiting equip
 		Equipment e = hud.GetQuickItemSelected();
-		while (Input.GetButtonDown(keyPressed.ToString()))
+		while (Input.GetButtonDown(keyName))
 		{
 			print ("here");
 			if(Input.GetMouseButton(1))

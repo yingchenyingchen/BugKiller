@@ -4,17 +4,19 @@ using System.Collections.Generic;
 
 public class Inventory : MonoBehaviour {
 	
-	public List<Equipment> EquipmentList { get; private set; }
+	public QuickInventory EquipmentList { get; private set; }
+	public Equipment defaultItem;
 
 	// Use this for initialization
 	void Start () {
-		EquipmentList = new List<Equipment> ();
+		EquipmentList = new QuickInventory (10);
 	}
 
+	/*
 	public void AddItem(Equipment equipment)
 	{
 		EquipmentList.Add (equipment);
-	}
+	}*/
 
 
 	// Update is called once per frame

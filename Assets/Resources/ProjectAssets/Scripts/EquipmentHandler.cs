@@ -10,7 +10,7 @@ public class EquipmentHandler : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		//Equip (EquiptmentHeld);
+
 	}
 	
 	// Update is called once per frame
@@ -34,10 +34,10 @@ public class EquipmentHandler : MonoBehaviour {
 	public void EquipLeft(Equipment equipment)
 	{
 		UnequipLeft ();
-		EquipmentHeldRight = (Equipment)Instantiate(equipment);
-		EquipmentHeldRight.transform.position = RightHand.transform.position;
-		EquipmentHeldRight.transform.rotation = RightHand.transform.rotation;
-		EquipmentHeldRight.transform.parent = RightHand.transform;
+		EquipmentHeldLeft = (Equipment)Instantiate(equipment);
+		EquipmentHeldLeft.transform.position = LeftHand.transform.position;
+		EquipmentHeldLeft.transform.rotation = LeftHand.transform.rotation;
+		EquipmentHeldLeft.transform.parent = LeftHand.transform;
 	}
 
 	public void UnequipRight()
