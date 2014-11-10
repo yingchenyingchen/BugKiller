@@ -7,7 +7,7 @@ public class Flashlight : Equipment {
 
 	// Use this for initialization
 	void Start () {
-
+		Equipped = false;
 	}
 	
 	// Update is called once per frame
@@ -21,4 +21,13 @@ public class Flashlight : Equipment {
 		lightBulb.enabled = !lightBulb.enabled;
 	}
 
+	public override void OnEquip()
+	{
+		Equipped = true;
+	}
+
+	public override void OnUnequip()
+	{
+
+	}
 }

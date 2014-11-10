@@ -20,6 +20,7 @@ public class HUD : MonoBehaviour {
 	
 	//Menu Inventory Variables
 	bool InventoryOpen = false;
+	int InventorySelectionGrid = 0;
 	int InventoryWidthStart = (Screen.width / 2) - 250;
 	int InventoryHeightStart = (Screen.height / 2) - 250;
 	int InventoryWidth = 500;
@@ -30,6 +31,14 @@ public class HUD : MonoBehaviour {
 	int selectionGridInt = 0;
 	string[] selectionStrings = {"Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6"};
 
+	//Codex Variables
+	bool CodexOpen = false;
+	int CodexWidthStart = (Screen.width / 2) - 400;
+	int CodexHeightStart = (Screen.height / 2) - 250;
+	int CodexWidth = 800;
+	int CodexHeight = 500;
+
+
 	void Start()
 	{
 		print (quickInventory.Count);
@@ -37,6 +46,9 @@ public class HUD : MonoBehaviour {
 
 	void Update() 
 	{
+		if (Input.GetKeyUp (KeyCode.F1) || Input.GetKeyUp(KeyCode.Escape)) {
+			ToggleMenu();
+		}
 		//Screen.lockCursor = true;
 		updateQuickItemGui ();
 	}
@@ -50,37 +62,77 @@ public class HUD : MonoBehaviour {
 		}
 		
 		if (InventoryOpen) {
+			
+			Screen.lockCursor = false;
 			GUI.Box (new Rect (InventoryWidthStart,InventoryHeightStart,InventoryWidth,InventoryHeight), "Inventory");
+			InventorySelectionGrid = GUI.SelectionGrid (new Rect (InventoryWidthStart + 5, InventoryHeightStart + InventoryHeight - 55, InventoryWidth -5, 50 ), selectionGridInt, selectionStrings, 6);
+			
 			if(GUI.Button(new Rect (InventoryWidthStart+475, InventoryHeightStart, 25, 25), "x")){
 				qInventoryShown = true;
 				InventoryOpen = false;
 				MenuOpen = true;
 			}
 		}
-		
-		if (MenuOpen) {
-			GUI.Box(new Rect(MenuWidthStart,MenuHeightStart,150,MenuSpacing*6+10), "Menu");
+
+		if (CodexOpen) 
+		{
+			Screen.lockCursor = false;
+			GUI.Box (new Rect (CodexWidthStart, CodexHeightStart, CodexWidth, CodexHeight), "Codex");
+			
+			GUI.BeginScrollView (new Rect (CodexWidthStart + 5, CodexHeightStart + 25, CodexWidth/2 + 100, CodexHeight/2), Vector2.zero, new Rect (CodexWidthStart + 5, CodexHeightStart + 25,  CodexWidth/2+75, CodexHeight*2));
+			GUI.TextArea (new Rect (CodexWidthStart + 5, CodexHeightStart + 25, CodexWidth/2 + 100, CodexHeight/2), "Bug Information");
+			GUI.EndScrollView();
+			
+			GUI.TextArea (new Rect (CodexWidthStart + 5, CodexHeightStart + CodexHeight/2 + 35, CodexWidth/2 + 100, CodexHeight/2-50), "Notes Here");
+			
+			GUI.BeginScrollView (new Rect (CodexWidthStart + CodexWidth/2 + 110, CodexHeightStart + 25 , CodexWidth/2-115, CodexHeight-30), Vector2.zero, new Rect (CodexWidthStart + CodexWidth/2 + 110, CodexHeightStart + 25,  CodexWidth/2-115, CodexHeight*2));
+			GUI.TextArea (new Rect (CodexWidthStart + CodexWidth/2 + 110, CodexHeightStart + 25 , CodexWidth/2-115, CodexHeight-30), "Bug Information Index");
+			GUI.EndScrollView();
+			
+			if (GUI.Button (new Rect (CodexWidthStart + CodexWidth - 25, CodexHeightStart, 25, 20), "x")) {
+				qInventoryShown = true;
+				InventoryOpen = false;
+				CodexOpen = false;
+				MenuOpen = true;
+			}
+		}		
+
+		if (MenuOpen) 
+		{
+			Screen.lockCursor = false;
+			Time.timeScale = 0;
+			GUI.Box(new Rect(MenuWidthStart,MenuHeightStart,150,MenuSpacing*7+10), "Menu");
 			if(GUI.Button(new Rect(MenuWidthStart+20,MenuHeightStart+MenuSpacing,110,20), "Load")) {
 				//Load Game
 			}
 			if(GUI.Button(new Rect(MenuWidthStart+20,MenuHeightStart+2*MenuSpacing,110,20), "Save")) {
 				//Save Game
 			}
-			if(GUI.Button(new Rect(MenuWidthStart+20,MenuHeightStart+3*MenuSpacing,110,20), "Journal")) {
-				//Open journal
+			if(GUI.Button(new Rect(MenuWidthStart+20,MenuHeightStart+3*MenuSpacing,110,20), "Codex")) {
+				MenuOpen = !MenuOpen;
+				qInventoryShown = false;
+				InventoryOpen = false;
+				CodexOpen = true;
 			}
 			if(GUI.Button(new Rect(MenuWidthStart+20,MenuHeightStart+4*MenuSpacing,110,20), "Inventory")) {
 				MenuOpen = !MenuOpen;
 				qInventoryShown = false;
+				CodexOpen = false;
 				InventoryOpen = true;
 			}
-			if(GUI.Button(new Rect(MenuWidthStart+20,MenuHeightStart+5*MenuSpacing,110,20), "Quit")) {
-				//Save Game
+			if(GUI.Button(new Rect(MenuWidthStart+20,MenuHeightStart+5*MenuSpacing,110,20), "Resume")) {
+				ToggleMenu();
+			}
+			if(GUI.Button(new Rect(MenuWidthStart+20, MenuHeightStart+6*MenuSpacing, 110, 20), "Quit Game")){
+				Application.Quit();//Will not exit when in editor or web mode, but will in actual game
 			}
 			
 		}
-		if (GUI.Button (new Rect (0, 0, 100, 50), "Menu")) {
-			MenuOpen = !MenuOpen;
+
+		if (!MenuOpen && !CodexOpen && !InventoryOpen) 
+		{
+			Screen.lockCursor = true;
+			Time.timeScale = 1;
 		}
 		
 	}//end OnGui
@@ -99,6 +151,23 @@ public class HUD : MonoBehaviour {
 	{
 		return quickInventory [selectionGridInt];
 	}
+
+	public void ToggleMenu()
+	{
+		MenuOpen = !MenuOpen;
+		if (InventoryOpen) {
+			InventoryOpen = false;
+			qInventoryShown = true;
+		}
+		if (CodexOpen) {
+			CodexOpen = false;
+			qInventoryShown = true;
+		}
+		if (MenuOpen)
+			SendMessage ("FreezePlayer");
+		else
+			SendMessage("UnfreezePlayer");
+	}//end ToggleMenu
 
     private void updateQuickItemGui()
 	{

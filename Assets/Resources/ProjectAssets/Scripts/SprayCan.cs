@@ -4,8 +4,11 @@ using System.Collections;
 public class SprayCan :  Equipment {
 
 	public GameObject SprayNozzle;
+	private int mouseNum;
+
 	void Start ()
 	{
+		Equipped = false;
 		if (!SprayNozzle.particleSystem)
 			SprayNozzle.AddComponent ("ParticleSystem");
 	}
@@ -14,7 +17,7 @@ public class SprayCan :  Equipment {
 	// Update is called once per frame
 	void Update () {
 
-		 if (!Input.GetMouseButton(0))
+		 if (!Input.GetMouseButton(mouseNum))
 		{
 			SprayNozzle.particleSystem.enableEmission = false;
 			SprayNozzle.particleSystem.Stop();
@@ -25,5 +28,21 @@ public class SprayCan :  Equipment {
 	{
 		SprayNozzle.particleSystem.enableEmission = true;
 		SprayNozzle.particleSystem.Play();
+	}
+
+	public void Activate (int mouseNum)
+	{
+		SprayNozzle.particleSystem.enableEmission = true;
+		SprayNozzle.particleSystem.Play();
+	}
+
+	public override void OnEquip()
+	{
+		Equipped = true;
+	}
+	
+	public override void OnUnequip()
+	{
+		
 	}
 }
