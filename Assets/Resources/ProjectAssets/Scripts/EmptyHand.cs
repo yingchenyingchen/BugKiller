@@ -11,6 +11,8 @@ public class EmptyHand : Equipment {
 	private string _activateButton;
 	private GameObject _holdAnchorTemplate;
 	private GameObject _holder;
+	private KeyCode _input;
+
 
 	public EmptyHand ()
 	{
@@ -33,8 +35,9 @@ public class EmptyHand : Equipment {
 	}
 
 	//pick stuff up
-	public override void Activate()
+	public override void Activate(KeyCode input)
 	{
+		_input = input;
 		if (_handFull) 
 		{
 			dropObjects ();
@@ -63,7 +66,7 @@ public class EmptyHand : Equipment {
 
 	private void CheckForDrop()
 	{
-		if (!Input.GetMouseButton (0))
+		if (!Input.GetKey (_input))
 		{
 			if(_handFull)
 				dropObjects ();

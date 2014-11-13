@@ -16,7 +16,7 @@ public class Flashlight : Equipment {
 	}
 	
 	//toggle lightbulb
-	public override void Activate()
+	public override void Activate(KeyCode input)
 	{
 		lightBulb.enabled = !lightBulb.enabled;
 	}

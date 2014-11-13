@@ -16,9 +16,9 @@ public class EquipmentHandler : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (EquipmentHeldLeft && Input.GetMouseButtonDown(0))
-			EquipmentHeldLeft.Activate ();
+			EquipmentHeldLeft.Activate (KeyCode.Mouse0);
 		if (EquipmentHeldRight && Input.GetMouseButtonDown(1))
-			EquipmentHeldRight.Activate ();
+			EquipmentHeldRight.Activate (KeyCode.Mouse1);
 
 	}
 
@@ -64,8 +64,7 @@ public class EquipmentHandler : MonoBehaviour {
 			thisHand = EquipmentHeldLeft;
 			unequip = () =>  UnequipRight();
 		}
-		print (hand);
-		if (thisHand && thisHand.name == name) 
+		if (thisHand && thisHand.name == name) //if there is something equipped in hand and its name is the same 
 		{
 			return true;
 		} 
