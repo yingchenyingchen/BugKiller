@@ -16,7 +16,7 @@ public class HeadLamp : Equipment {
 
 	}
 		
-	public override void Activate ()
+	public override void Activate (KeyCode input)
 	{
 		lamp.enabled = !lamp.enabled;
 	}
@@ -24,7 +24,6 @@ public class HeadLamp : Equipment {
 
 	public override void OnEquip ()
 	{
-
 
 	}
 

@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour {
 
 		if(Input.GetKeyDown("h"))
 		{
-			headObject.Activate();
+			headObject.Activate(KeyCode.H);
 		}
 		//update Equipment
 	}

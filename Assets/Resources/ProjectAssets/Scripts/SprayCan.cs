@@ -5,6 +5,7 @@ public class SprayCan :  Equipment {
 
 	public GameObject SprayNozzle;
 	private int mouseNum;
+	private KeyCode _input;
 
 	void Start ()
 	{
@@ -17,21 +18,17 @@ public class SprayCan :  Equipment {
 	// Update is called once per frame
 	void Update () {
 
-		 if (!Input.GetMouseButton(mouseNum))
+		if (!Input.GetKey(_input))
 		{
 			SprayNozzle.particleSystem.enableEmission = false;
 			SprayNozzle.particleSystem.Stop();
 		}
 	}
+	
 
-	public override void Activate()
+	public override void Activate (KeyCode input)
 	{
-		SprayNozzle.particleSystem.enableEmission = true;
-		SprayNozzle.particleSystem.Play();
-	}
-
-	public void Activate (int mouseNum)
-	{
+		_input = input;
 		SprayNozzle.particleSystem.enableEmission = true;
 		SprayNozzle.particleSystem.Play();
 	}
