@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Resources\ProjectAssets\Scripts\AerosolCan.cs" />
      <Compile Include="Assets\Resources\ProjectAssets\Scripts\Block_Move.cs" />
      <Compile Include="Assets\Resources\ProjectAssets\Scripts\BugAI.cs" />
      <Compile Include="Assets\Resources\ProjectAssets\Scripts\CharacterMotor.cs" />

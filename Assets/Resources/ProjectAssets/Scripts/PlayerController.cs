@@ -28,6 +28,9 @@ public class PlayerController : MonoBehaviour {
 		hud = gameObject.AddComponent<HUD>();
 		hud.AddQuickItem(0,(Equipment)Resources.Load ("ProjectAssets/prefabs/Flashlight", typeof(Equipment)));
 		hud.AddQuickItem(1,(Equipment)Resources.Load ("ProjectAssets/prefabs/SprayCan", typeof(Equipment)));
+		hud.AddQuickItem(2,(Equipment)Resources.Load ("ProjectAssets/prefabs/LHand", typeof(Equipment)));
+		hud.AddQuickItem(3,(Equipment)Resources.Load ("ProjectAssets/prefabs/RHand", typeof(Equipment)));
+		hud.AddQuickItem(4,(Equipment)Resources.Load ("ProjectAssets/prefabs/Aerosol_Can_2", typeof(Equipment)));
 		//controllers
 		_mouseLook = gameObject.AddComponent<MouseLook> ();
 		_characterMotor = gameObject.AddComponent<CharacterMotor> ();

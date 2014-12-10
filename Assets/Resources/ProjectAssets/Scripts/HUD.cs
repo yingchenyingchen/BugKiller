@@ -54,12 +54,12 @@ public class HUD : MonoBehaviour {
 	}
 
 	void OnGUI(){
-		GUI.Box (new Rect (Screen.width-200,0,200,25), "Air Quality Bar");
-		GUI.Box (new Rect (Screen.width-200,30,200,25), "% Bugs Found");
+		//GUI.Box (new Rect (Screen.width-200,0,200,25), "Air Quality Bar");
+		//GUI.Box (new Rect (Screen.width-200,30,200,25), "% Bugs Found");
 		
-		if (qInventoryShown) {
-			selectionGridInt = GUI.SelectionGrid (new Rect (Screen.width / 2 - 250, Screen.height - 55, 500, 50), selectionGridInt, selectionStrings, 6);
-		}
+		//if (qInventoryShown) {
+		//	selectionGridInt = GUI.SelectionGrid (new Rect (Screen.width / 2 - 250, Screen.height - 55, 500, 50), selectionGridInt, selectionStrings, 6);
+		//}
 		
 		if (InventoryOpen) {
 			
