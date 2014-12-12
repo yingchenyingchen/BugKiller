@@ -7,6 +7,8 @@ public class EquipmentHandler : MonoBehaviour {
 	public Equipment EquipmentHeldLeft;
 	public GameObject RightHand;
 	public GameObject LeftHand;
+	public Equipment HandModelLeft;
+	public Equipment HandModelRight;
 
 	// Use this for initialization
 	void Start () {
@@ -26,6 +28,9 @@ public class EquipmentHandler : MonoBehaviour {
 	{
 		if(checkEquipped(equipment, "right"))
 			return;
+		if (equipment.gameObject.name == "LHand")
+			return;
+
 		UnequipRight ();
 		EquipmentHeldRight = (Equipment)Instantiate(equipment);
 		EquipmentHeldRight.transform.position = RightHand.transform.position;
@@ -37,6 +42,8 @@ public class EquipmentHandler : MonoBehaviour {
 	{
 		if(checkEquipped(equipment, "left"))
 			   return;
+		if (equipment.gameObject.name == "RHand")
+			return;
 		UnequipLeft ();
 		EquipmentHeldLeft = (Equipment)Instantiate(equipment);
 		EquipmentHeldLeft.transform.position = LeftHand.transform.position;

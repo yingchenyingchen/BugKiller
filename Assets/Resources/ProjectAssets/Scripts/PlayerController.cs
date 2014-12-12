@@ -19,17 +19,21 @@ public class PlayerController : MonoBehaviour {
 	void Start () {
 		if(keyCodes==null)
 			keyCodes=(KeyCode[])System.Enum.GetValues(typeof(KeyCode));
+		var RH = (Equipment)Resources.Load ("ProjectAssets/prefabs/RHand", typeof(Equipment));
+		var LH = (Equipment)Resources.Load ("ProjectAssets/prefabs/LHand", typeof(Equipment));
 		//quickslots/equiptment
 		equipmentHandler = gameObject.AddComponent<EquipmentHandler>();
 		equipmentHandler.RightHand = rightHand;
 		equipmentHandler.LeftHand = leftHand;
+		equipmentHandler.HandModelLeft = LH;
+		equipmentHandler.HandModelRight = RH;
 		waitingOnEquip = false;
 		//hud
 		hud = gameObject.AddComponent<HUD>();
 		hud.AddQuickItem(0,(Equipment)Resources.Load ("ProjectAssets/prefabs/Flashlight", typeof(Equipment)));
 		hud.AddQuickItem(1,(Equipment)Resources.Load ("ProjectAssets/prefabs/SprayCan", typeof(Equipment)));
-		hud.AddQuickItem(2,(Equipment)Resources.Load ("ProjectAssets/prefabs/LHand", typeof(Equipment)));
-		hud.AddQuickItem(3,(Equipment)Resources.Load ("ProjectAssets/prefabs/RHand", typeof(Equipment)));
+		hud.AddQuickItem(2, LH);
+		hud.AddQuickItem(3, RH);
 		hud.AddQuickItem(4,(Equipment)Resources.Load ("ProjectAssets/prefabs/Aerosol_Can_2", typeof(Equipment)));
 		//controllers
 		_mouseLook = gameObject.AddComponent<MouseLook> ();
@@ -68,7 +72,6 @@ public class PlayerController : MonoBehaviour {
 		print (code);
 		while (Input.GetKey(code))
 		{
-			print ("here");
 			if(Input.GetMouseButton(1))
 			{
 				equipmentHandler.EquipRight(e);
