@@ -1,13 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\flocking\Assets\BugAIV2.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\ProjectAssets\Scripts\FPSInputController.cs">
     <Files>
-      <File FileName="..\flocking\Assets\BugAIV2.cs" Line="60" Column="4" />
-      <File FileName="..\flocking\Assets\Repellant.cs" Line="1" Column="1" />
-      <File FileName="..\flocking\Assets\FlockWithBaitBehaviour.cs" Line="1" Column="1" />
-      <File FileName="..\flocking\Assets\Attractant.cs" Line="1" Column="1" />
-      <File FileName="Assets\Resources\ProjectAssets\Scripts\Equipment.cs" Line="1" Column="1" />
-      <File FileName="Assets\Resources\ProjectAssets\Scripts\QuickInventory.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\ProjectAssets\Scripts\FPSInputController.cs" Line="11" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
