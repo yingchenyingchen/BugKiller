@@ -801,6 +801,118 @@ ModelImporter:
     4300218: Mesh110
     4300220: Mesh111
     4300222: Mesh112
+    6400000: Mesh1
+    6400002: Mesh10
+    6400004: Mesh100
+    6400006: Mesh101
+    6400008: Mesh102
+    6400010: Mesh103
+    6400012: Mesh104
+    6400014: Mesh105
+    6400016: Mesh106
+    6400018: Mesh107
+    6400020: Mesh108
+    6400022: Mesh109
+    6400024: Mesh11
+    6400026: Mesh110
+    6400028: Mesh111
+    6400030: Mesh112
+    6400032: Mesh12
+    6400034: Mesh13
+    6400036: Mesh14
+    6400038: Mesh15
+    6400040: Mesh16
+    6400042: Mesh17
+    6400044: Mesh18
+    6400046: Mesh19
+    6400048: Mesh2
+    6400050: Mesh20
+    6400052: Mesh21
+    6400054: Mesh22
+    6400056: Mesh23
+    6400058: Mesh24
+    6400060: Mesh25
+    6400062: Mesh26
+    6400064: Mesh27
+    6400066: Mesh28
+    6400068: Mesh29
+    6400070: Mesh3
+    6400072: Mesh30
+    6400074: Mesh31
+    6400076: Mesh32
+    6400078: Mesh33
+    6400080: Mesh34
+    6400082: Mesh35
+    6400084: Mesh36
+    6400086: Mesh37
+    6400088: Mesh38
+    6400090: Mesh39
+    6400092: Mesh4
+    6400094: Mesh40
+    6400096: Mesh41
+    6400098: Mesh42
+    6400100: Mesh43
+    6400102: Mesh44
+    6400104: Mesh45
+    6400106: Mesh46
+    6400108: Mesh47
+    6400110: Mesh48
+    6400112: Mesh49
+    6400114: Mesh5
+    6400116: Mesh50
+    6400118: Mesh51
+    6400120: Mesh52
+    6400122: Mesh53
+    6400124: Mesh54
+    6400126: Mesh55
+    6400128: Mesh56
+    6400130: Mesh57
+    6400132: Mesh58
+    6400134: Mesh59
+    6400136: Mesh6
+    6400138: Mesh60
+    6400140: Mesh61
+    6400142: Mesh62
+    6400144: Mesh63
+    6400146: Mesh64
+    6400148: Mesh65
+    6400150: Mesh66
+    6400152: Mesh67
+    6400154: Mesh68
+    6400156: Mesh69
+    6400158: Mesh7
+    6400160: Mesh70
+    6400162: Mesh71
+    6400164: Mesh72
+    6400166: Mesh73
+    6400168: Mesh74
+    6400170: Mesh75
+    6400172: Mesh76
+    6400174: Mesh77
+    6400176: Mesh78
+    6400178: Mesh79
+    6400180: Mesh8
+    6400182: Mesh80
+    6400184: Mesh81
+    6400186: Mesh82
+    6400188: Mesh83
+    6400190: Mesh84
+    6400192: Mesh85
+    6400194: Mesh86
+    6400196: Mesh87
+    6400198: Mesh88
+    6400200: Mesh89
+    6400202: Mesh9
+    6400204: Mesh90
+    6400206: Mesh91
+    6400208: Mesh92
+    6400210: Mesh93
+    6400212: Mesh94
+    6400214: Mesh95
+    6400216: Mesh96
+    6400218: Mesh97
+    6400220: Mesh98
+    6400222: Mesh99
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -823,7 +935,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: .00999999978
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
