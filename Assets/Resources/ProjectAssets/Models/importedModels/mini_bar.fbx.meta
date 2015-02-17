@@ -113,6 +113,20 @@ ModelImporter:
     4300022: Mesh12
     4300024: Mesh13
     4300026: Mesh14
+    6400000: Mesh1
+    6400002: Mesh10
+    6400004: Mesh11
+    6400006: Mesh12
+    6400008: Mesh13
+    6400010: Mesh14
+    6400012: Mesh2
+    6400014: Mesh3
+    6400016: Mesh4
+    6400018: Mesh5
+    6400020: Mesh6
+    6400022: Mesh7
+    6400024: Mesh8
+    6400026: Mesh9
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -135,7 +149,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: .00999999978
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0

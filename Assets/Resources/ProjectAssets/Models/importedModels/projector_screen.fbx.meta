@@ -44,6 +44,11 @@ ModelImporter:
     4300004: Mesh3
     4300006: Mesh4
     4300008: Mesh5
+    6400000: Mesh1
+    6400002: Mesh2
+    6400004: Mesh3
+    6400006: Mesh4
+    6400008: Mesh5
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -66,7 +71,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: .00999999978
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
