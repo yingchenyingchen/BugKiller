@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{3F160834-E78A-0467-2449-E44B48C57DC6}</ProjectGuid>
+	<ProjectGuid>{CB7C7D90-FF3B-0395-EC74-6439940C4AD9}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -19,7 +19,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_4_6_1;UNITY_4_6;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_2;UNITY_4_6;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_IL2CPP;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;UNITY5_SCRIPTING_IN_UNITY4;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -39,41 +39,41 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>D:/Programs/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>D:/Programs/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Resources\ProjectAssets\Scripts\AerosolCan.cs" />
      <Compile Include="Assets\Resources\ProjectAssets\Scripts\Block_Move.cs" />
      <Compile Include="Assets\Resources\ProjectAssets\Scripts\BugAI.cs" />
      <Compile Include="Assets\Resources\ProjectAssets\Scripts\CharacterMotor.cs" />
-     <Compile Include="Assets\Resources\ProjectAssets\Scripts\EmptyHand.cs" />
-     <Compile Include="Assets\Resources\ProjectAssets\Scripts\Equipment.cs" />
-     <Compile Include="Assets\Resources\ProjectAssets\Scripts\EquipmentHandler.cs" />
+     <Compile Include="Assets\Resources\ProjectAssets\Scripts\Equipment\AerosolCan.cs" />
+     <Compile Include="Assets\Resources\ProjectAssets\Scripts\Equipment\EmptyHand.cs" />
+     <Compile Include="Assets\Resources\ProjectAssets\Scripts\Equipment\Equipment.cs" />
+     <Compile Include="Assets\Resources\ProjectAssets\Scripts\Equipment\EquipmentHandler.cs" />
+     <Compile Include="Assets\Resources\ProjectAssets\Scripts\Equipment\Flashlight.cs" />
+     <Compile Include="Assets\Resources\ProjectAssets\Scripts\Equipment\HeadLamp.cs" />
+     <Compile Include="Assets\Resources\ProjectAssets\Scripts\Equipment\Inventory.cs" />
+     <Compile Include="Assets\Resources\ProjectAssets\Scripts\Equipment\SprayCan.cs" />
      <Compile Include="Assets\Resources\ProjectAssets\Scripts\FPSInputController.cs" />
-     <Compile Include="Assets\Resources\ProjectAssets\Scripts\Flashlight.cs" />
      <Compile Include="Assets\Resources\ProjectAssets\Scripts\HUD.cs" />
      <Compile Include="Assets\Resources\ProjectAssets\Scripts\HUD2.cs" />
-     <Compile Include="Assets\Resources\ProjectAssets\Scripts\HeadLamp.cs" />
-     <Compile Include="Assets\Resources\ProjectAssets\Scripts\Inventory.cs" />
      <Compile Include="Assets\Resources\ProjectAssets\Scripts\ObjectGrab.cs" />
      <Compile Include="Assets\Resources\ProjectAssets\Scripts\ObjectGrabber.cs" />
      <Compile Include="Assets\Resources\ProjectAssets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Resources\ProjectAssets\Scripts\QuickInventory.cs" />
      <Compile Include="Assets\Resources\ProjectAssets\Scripts\ReverseGravity.cs" />
-     <Compile Include="Assets\Resources\ProjectAssets\Scripts\SprayCan.cs" />
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
+ <HintPath>D:/Programs/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{55A57D31-CE29-BE85-E9D2-E07F88385E13}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{80BD295A-236C-4E6E-8521-209DEAF760EE}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
-      <Project>{DE3C3055-EABB-0A9F-5F5A-7DCAA88136B3}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+      <Project>{882B378E-853A-F1EF-CC59-DBE954D6EC9A}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

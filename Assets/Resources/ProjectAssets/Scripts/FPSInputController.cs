@@ -13,19 +13,29 @@ public class FPSInputController : MonoBehaviour
     float crchSpeed = 3f;
     float runSpeed = 20f;
    
+
     private CharacterController ch;
-    private float height;
+	private Transform tr;
+    private float dist;
+	void Start()
+	{
+		motor =  GetComponent<CharacterMotor>();
+		tr = transform;
+		CharacterController ch = GetComponent<CharacterController>();
+		dist = ch.height/2; // calculate distance to ground
+	}
     // Use this for initialization
     void Awake()
     {
-        motor = GetComponent<CharacterMotor>();
-        ch = GetComponent<CharacterController> ();
-        height = ch.height;
+       // motor = GetComponent<CharacterMotor>();
+        //ch = GetComponent<CharacterController> ();
+       
     }
 
     // Update is called once per frame
     void Update()
     {
+
         // Get the input vector from kayboard or analog stick
         Vector3 directionVector = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         Crouch ();
@@ -53,18 +63,31 @@ public class FPSInputController : MonoBehaviour
     }
         void Crouch()
     {
-        float h = height;
-        float speed = walkSpeed;
-        
-        if (ch.isGrounded && Input.GetKey (KeyCode.LeftShift)) {
-            speed = runSpeed;
-        }
-        if (Input.GetKey (KeyCode.C)) {
-            h = .5f*height;
-            speed = crchSpeed;
-        }
-        motor.movement.maxForwardSpeed = speed;
-        float lastHeight = ch.height;
-        ch.height = Mathf.Lerp (ch.height, h, 5 * Time.deltaTime);
+
+		float vScale = 1.0f;
+		float speed = walkSpeed;
+		
+		if ((Input.GetKey("left shift") || Input.GetKey("right shift")) && motor.grounded)
+		{
+			speed = runSpeed;            
+		}
+		
+		if (Input.GetKey("c"))
+		{ // press C to crouch
+			vScale = 0.5f;
+			speed = crchSpeed; // slow down when crouching
+		}
+		
+		motor.movement.maxForwardSpeed = speed; // set max speed
+		float ultScale = tr.localScale.y; // crouch/stand up smoothly 
+		
+		Vector3 tmpScale = tr.localScale;
+		Vector3 tmpPosition = tr.position;
+		
+		tmpScale.y = Mathf.Lerp(tr.localScale.y, vScale, 5 * Time.deltaTime);
+		tr.localScale = tmpScale;
+		
+		tmpPosition.y += dist * (tr.localScale.y - ultScale); // fix vertical position        
+		tr.position = tmpPosition;
     }
 }
