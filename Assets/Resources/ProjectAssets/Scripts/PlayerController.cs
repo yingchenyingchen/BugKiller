@@ -27,8 +27,7 @@ public class PlayerController : MonoBehaviour {
 		equipmentHandler.LeftHand = leftHand;
 		equipmentHandler.HandModelLeft = LH;
 		equipmentHandler.HandModelRight = RH;
-		waitingOnEquip = false;       
-
+		waitingOnEquip = false;
 		//hud
 		hud = gameObject.AddComponent<HUD>();
 		hud.AddQuickItem(0,(Equipment)Resources.Load ("ProjectAssets/prefabs/Flashlight", typeof(Equipment)));

@@ -7,7 +7,7 @@ public abstract class Equipment : MonoBehaviour {
 
 	public abstract void Activate(KeyCode input);
 
-	public abstract void OnEquip();    
+	public abstract void OnEquip();
 
 	public abstract void OnUnequip();
 
