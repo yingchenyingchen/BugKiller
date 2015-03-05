@@ -30,7 +30,7 @@ public class CharacterMotor : MonoBehaviour
     {
         // The maximum horizontal speed when moving
         public float maxForwardSpeed = 3.0f;
-        public float maxSidewaysSpeed = 2.0f;
+        public float maxSidewaysSpeed = 3.0f;
         public float maxBackwardsSpeed = 2.0f;
 
         // Curve for multiplying speed based on slope(negative = downwards)
@@ -87,7 +87,7 @@ public class CharacterMotor : MonoBehaviour
         public float baseHeight = 1.0f;
 
         // We add extraHeight units(meters) on top when holding the button down longer while jumping
-        public float extraHeight = 4.1f;
+        public float extraHeight = 1.0f;
 
         // How much does the character jump out perpendicular to the surface on walkable surfaces?
         // 0 means a fully vertical jump and 1 means fully perpendicular.
@@ -336,6 +336,7 @@ public class CharacterMotor : MonoBehaviour
             movingPlatform.activeGlobalRotation = tr.rotation;
             movingPlatform.activeLocalRotation = Quaternion.Inverse(movingPlatform.activePlatform.rotation) * movingPlatform.activeGlobalRotation;
         }
+
     }
 
     void FixedUpdate()
