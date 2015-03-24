@@ -1,0 +1,814 @@
+fileFormatVersion: 2
+guid: fb332be3619d64b859ec3d2564249106
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: group_0
+    100002: instance_0
+    100004: instance_1
+    100006: instance_10
+    100008: instance_100
+    100010: instance_101
+    100012: instance_102
+    100014: instance_103
+    100016: instance_104
+    100018: instance_105
+    100020: instance_106
+    100022: instance_107
+    100024: instance_108
+    100026: instance_109
+    100028: instance_11
+    100030: instance_110
+    100032: instance_111
+    100034: instance_112
+    100036: instance_113
+    100038: instance_114
+    100040: instance_115
+    100042: instance_116
+    100044: instance_117
+    100046: instance_118
+    100048: instance_119
+    100050: instance_12
+    100052: instance_120
+    100054: instance_121
+    100056: instance_122
+    100058: instance_13
+    100060: instance_14
+    100062: instance_15
+    100064: instance_16
+    100066: instance_17
+    100068: instance_18
+    100070: instance_19
+    100072: instance_2
+    100074: instance_20
+    100076: instance_21
+    100078: instance_22
+    100080: instance_23
+    100082: instance_24
+    100084: instance_25
+    100086: instance_26
+    100088: instance_27
+    100090: instance_28
+    100092: instance_29
+    100094: instance_3
+    100096: instance_30
+    100098: instance_31
+    100100: instance_32
+    100102: instance_33
+    100104: instance_34
+    100106: instance_35
+    100108: instance_36
+    100110: instance_37
+    100112: instance_38
+    100114: instance_39
+    100116: instance_4
+    100118: instance_40
+    100120: instance_41
+    100122: instance_42
+    100124: instance_43
+    100126: instance_44
+    100128: instance_45
+    100130: instance_46
+    100132: instance_47
+    100134: instance_48
+    100136: instance_49
+    100138: instance_5
+    100140: instance_50
+    100142: instance_51
+    100144: instance_52
+    100146: instance_53
+    100148: instance_54
+    100150: instance_55
+    100152: instance_56
+    100154: instance_57
+    100156: instance_58
+    100158: instance_59
+    100160: instance_6
+    100162: instance_60
+    100164: instance_61
+    100166: instance_62
+    100168: instance_63
+    100170: instance_64
+    100172: instance_65
+    100174: instance_66
+    100176: instance_67
+    100178: instance_68
+    100180: instance_69
+    100182: instance_7
+    100184: instance_70
+    100186: instance_71
+    100188: instance_72
+    100190: instance_73
+    100192: instance_74
+    100194: instance_75
+    100196: instance_76
+    100198: instance_77
+    100200: instance_78
+    100202: instance_79
+    100204: instance_8
+    100206: instance_80
+    100208: instance_81
+    100210: instance_82
+    100212: instance_83
+    100214: instance_84
+    100216: instance_85
+    100218: instance_86
+    100220: instance_87
+    100222: instance_88
+    100224: instance_89
+    100226: instance_9
+    100228: instance_90
+    100230: instance_91
+    100232: instance_92
+    100234: instance_93
+    100236: instance_94
+    100238: instance_95
+    100240: instance_96
+    100242: instance_97
+    100244: instance_98
+    100246: instance_99
+    100248: Maldour_Bug_-_88kb
+    100250: SimpleDome02
+    100252: SimpleDome02 1
+    100254: SimpleDome02 10
+    100256: SimpleDome02 11
+    100258: SimpleDome02 12
+    100260: SimpleDome02 13
+    100262: SimpleDome02 14
+    100264: SimpleDome02 15
+    100266: SimpleDome02 16
+    100268: SimpleDome02 17
+    100270: SimpleDome02 18
+    100272: SimpleDome02 19
+    100274: SimpleDome02 2
+    100276: SimpleDome02 20
+    100278: SimpleDome02 21
+    100280: SimpleDome02 22
+    100282: SimpleDome02 23
+    100284: SimpleDome02 24
+    100286: SimpleDome02 25
+    100288: SimpleDome02 26
+    100290: SimpleDome02 27
+    100292: SimpleDome02 28
+    100294: SimpleDome02 29
+    100296: SimpleDome02 3
+    100298: SimpleDome02 30
+    100300: SimpleDome02 4
+    100302: SimpleDome02 5
+    100304: SimpleDome02 6
+    100306: SimpleDome02 7
+    100308: SimpleDome02 8
+    100310: SimpleDome02 9
+    100312: SimpleSphere02
+    100314: SimpleSphere02 1
+    100316: SimpleSphere02 10
+    100318: SimpleSphere02 11
+    100320: SimpleSphere02 12
+    100322: SimpleSphere02 13
+    100324: SimpleSphere02 14
+    100326: SimpleSphere02 15
+    100328: SimpleSphere02 16
+    100330: SimpleSphere02 17
+    100332: SimpleSphere02 18
+    100334: SimpleSphere02 19
+    100336: SimpleSphere02 2
+    100338: SimpleSphere02 20
+    100340: SimpleSphere02 21
+    100342: SimpleSphere02 22
+    100344: SimpleSphere02 23
+    100346: SimpleSphere02 24
+    100348: SimpleSphere02 25
+    100350: SimpleSphere02 26
+    100352: SimpleSphere02 27
+    100354: SimpleSphere02 28
+    100356: SimpleSphere02 29
+    100358: SimpleSphere02 3
+    100360: SimpleSphere02 30
+    100362: SimpleSphere02 31
+    100364: SimpleSphere02 32
+    100366: SimpleSphere02 33
+    100368: SimpleSphere02 34
+    100370: SimpleSphere02 35
+    100372: SimpleSphere02 36
+    100374: SimpleSphere02 37
+    100376: SimpleSphere02 38
+    100378: SimpleSphere02 39
+    100380: SimpleSphere02 4
+    100382: SimpleSphere02 40
+    100384: SimpleSphere02 41
+    100386: SimpleSphere02 42
+    100388: SimpleSphere02 43
+    100390: SimpleSphere02 44
+    100392: SimpleSphere02 45
+    100394: SimpleSphere02 46
+    100396: SimpleSphere02 47
+    100398: SimpleSphere02 48
+    100400: SimpleSphere02 49
+    100402: SimpleSphere02 5
+    100404: SimpleSphere02 50
+    100406: SimpleSphere02 51
+    100408: SimpleSphere02 52
+    100410: SimpleSphere02 53
+    100412: SimpleSphere02 54
+    100414: SimpleSphere02 55
+    100416: SimpleSphere02 56
+    100418: SimpleSphere02 57
+    100420: SimpleSphere02 58
+    100422: SimpleSphere02 59
+    100424: SimpleSphere02 6
+    100426: SimpleSphere02 60
+    100428: SimpleSphere02 61
+    100430: SimpleSphere02 62
+    100432: SimpleSphere02 63
+    100434: SimpleSphere02 64
+    100436: SimpleSphere02 65
+    100438: SimpleSphere02 66
+    100440: SimpleSphere02 67
+    100442: SimpleSphere02 68
+    100444: SimpleSphere02 69
+    100446: SimpleSphere02 7
+    100448: SimpleSphere02 70
+    100450: SimpleSphere02 71
+    100452: SimpleSphere02 72
+    100454: SimpleSphere02 73
+    100456: SimpleSphere02 74
+    100458: SimpleSphere02 75
+    100460: SimpleSphere02 76
+    100462: SimpleSphere02 77
+    100464: SimpleSphere02 78
+    100466: SimpleSphere02 79
+    100468: SimpleSphere02 8
+    100470: SimpleSphere02 80
+    100472: SimpleSphere02 81
+    100474: SimpleSphere02 82
+    100476: SimpleSphere02 83
+    100478: SimpleSphere02 84
+    100480: SimpleSphere02 85
+    100482: SimpleSphere02 86
+    100484: SimpleSphere02 87
+    100486: SimpleSphere02 88
+    100488: SimpleSphere02 89
+    100490: SimpleSphere02 9
+    100492: SimpleSphere02 90
+    100494: //RootNode
+    400000: group_0
+    400002: instance_0
+    400004: instance_1
+    400006: instance_10
+    400008: instance_100
+    400010: instance_101
+    400012: instance_102
+    400014: instance_103
+    400016: instance_104
+    400018: instance_105
+    400020: instance_106
+    400022: instance_107
+    400024: instance_108
+    400026: instance_109
+    400028: instance_11
+    400030: instance_110
+    400032: instance_111
+    400034: instance_112
+    400036: instance_113
+    400038: instance_114
+    400040: instance_115
+    400042: instance_116
+    400044: instance_117
+    400046: instance_118
+    400048: instance_119
+    400050: instance_12
+    400052: instance_120
+    400054: instance_121
+    400056: instance_122
+    400058: instance_13
+    400060: instance_14
+    400062: instance_15
+    400064: instance_16
+    400066: instance_17
+    400068: instance_18
+    400070: instance_19
+    400072: instance_2
+    400074: instance_20
+    400076: instance_21
+    400078: instance_22
+    400080: instance_23
+    400082: instance_24
+    400084: instance_25
+    400086: instance_26
+    400088: instance_27
+    400090: instance_28
+    400092: instance_29
+    400094: instance_3
+    400096: instance_30
+    400098: instance_31
+    400100: instance_32
+    400102: instance_33
+    400104: instance_34
+    400106: instance_35
+    400108: instance_36
+    400110: instance_37
+    400112: instance_38
+    400114: instance_39
+    400116: instance_4
+    400118: instance_40
+    400120: instance_41
+    400122: instance_42
+    400124: instance_43
+    400126: instance_44
+    400128: instance_45
+    400130: instance_46
+    400132: instance_47
+    400134: instance_48
+    400136: instance_49
+    400138: instance_5
+    400140: instance_50
+    400142: instance_51
+    400144: instance_52
+    400146: instance_53
+    400148: instance_54
+    400150: instance_55
+    400152: instance_56
+    400154: instance_57
+    400156: instance_58
+    400158: instance_59
+    400160: instance_6
+    400162: instance_60
+    400164: instance_61
+    400166: instance_62
+    400168: instance_63
+    400170: instance_64
+    400172: instance_65
+    400174: instance_66
+    400176: instance_67
+    400178: instance_68
+    400180: instance_69
+    400182: instance_7
+    400184: instance_70
+    400186: instance_71
+    400188: instance_72
+    400190: instance_73
+    400192: instance_74
+    400194: instance_75
+    400196: instance_76
+    400198: instance_77
+    400200: instance_78
+    400202: instance_79
+    400204: instance_8
+    400206: instance_80
+    400208: instance_81
+    400210: instance_82
+    400212: instance_83
+    400214: instance_84
+    400216: instance_85
+    400218: instance_86
+    400220: instance_87
+    400222: instance_88
+    400224: instance_89
+    400226: instance_9
+    400228: instance_90
+    400230: instance_91
+    400232: instance_92
+    400234: instance_93
+    400236: instance_94
+    400238: instance_95
+    400240: instance_96
+    400242: instance_97
+    400244: instance_98
+    400246: instance_99
+    400248: Maldour_Bug_-_88kb
+    400250: SimpleDome02
+    400252: SimpleDome02 1
+    400254: SimpleDome02 10
+    400256: SimpleDome02 11
+    400258: SimpleDome02 12
+    400260: SimpleDome02 13
+    400262: SimpleDome02 14
+    400264: SimpleDome02 15
+    400266: SimpleDome02 16
+    400268: SimpleDome02 17
+    400270: SimpleDome02 18
+    400272: SimpleDome02 19
+    400274: SimpleDome02 2
+    400276: SimpleDome02 20
+    400278: SimpleDome02 21
+    400280: SimpleDome02 22
+    400282: SimpleDome02 23
+    400284: SimpleDome02 24
+    400286: SimpleDome02 25
+    400288: SimpleDome02 26
+    400290: SimpleDome02 27
+    400292: SimpleDome02 28
+    400294: SimpleDome02 29
+    400296: SimpleDome02 3
+    400298: SimpleDome02 30
+    400300: SimpleDome02 4
+    400302: SimpleDome02 5
+    400304: SimpleDome02 6
+    400306: SimpleDome02 7
+    400308: SimpleDome02 8
+    400310: SimpleDome02 9
+    400312: SimpleSphere02
+    400314: SimpleSphere02 1
+    400316: SimpleSphere02 10
+    400318: SimpleSphere02 11
+    400320: SimpleSphere02 12
+    400322: SimpleSphere02 13
+    400324: SimpleSphere02 14
+    400326: SimpleSphere02 15
+    400328: SimpleSphere02 16
+    400330: SimpleSphere02 17
+    400332: SimpleSphere02 18
+    400334: SimpleSphere02 19
+    400336: SimpleSphere02 2
+    400338: SimpleSphere02 20
+    400340: SimpleSphere02 21
+    400342: SimpleSphere02 22
+    400344: SimpleSphere02 23
+    400346: SimpleSphere02 24
+    400348: SimpleSphere02 25
+    400350: SimpleSphere02 26
+    400352: SimpleSphere02 27
+    400354: SimpleSphere02 28
+    400356: SimpleSphere02 29
+    400358: SimpleSphere02 3
+    400360: SimpleSphere02 30
+    400362: SimpleSphere02 31
+    400364: SimpleSphere02 32
+    400366: SimpleSphere02 33
+    400368: SimpleSphere02 34
+    400370: SimpleSphere02 35
+    400372: SimpleSphere02 36
+    400374: SimpleSphere02 37
+    400376: SimpleSphere02 38
+    400378: SimpleSphere02 39
+    400380: SimpleSphere02 4
+    400382: SimpleSphere02 40
+    400384: SimpleSphere02 41
+    400386: SimpleSphere02 42
+    400388: SimpleSphere02 43
+    400390: SimpleSphere02 44
+    400392: SimpleSphere02 45
+    400394: SimpleSphere02 46
+    400396: SimpleSphere02 47
+    400398: SimpleSphere02 48
+    400400: SimpleSphere02 49
+    400402: SimpleSphere02 5
+    400404: SimpleSphere02 50
+    400406: SimpleSphere02 51
+    400408: SimpleSphere02 52
+    400410: SimpleSphere02 53
+    400412: SimpleSphere02 54
+    400414: SimpleSphere02 55
+    400416: SimpleSphere02 56
+    400418: SimpleSphere02 57
+    400420: SimpleSphere02 58
+    400422: SimpleSphere02 59
+    400424: SimpleSphere02 6
+    400426: SimpleSphere02 60
+    400428: SimpleSphere02 61
+    400430: SimpleSphere02 62
+    400432: SimpleSphere02 63
+    400434: SimpleSphere02 64
+    400436: SimpleSphere02 65
+    400438: SimpleSphere02 66
+    400440: SimpleSphere02 67
+    400442: SimpleSphere02 68
+    400444: SimpleSphere02 69
+    400446: SimpleSphere02 7
+    400448: SimpleSphere02 70
+    400450: SimpleSphere02 71
+    400452: SimpleSphere02 72
+    400454: SimpleSphere02 73
+    400456: SimpleSphere02 74
+    400458: SimpleSphere02 75
+    400460: SimpleSphere02 76
+    400462: SimpleSphere02 77
+    400464: SimpleSphere02 78
+    400466: SimpleSphere02 79
+    400468: SimpleSphere02 8
+    400470: SimpleSphere02 80
+    400472: SimpleSphere02 81
+    400474: SimpleSphere02 82
+    400476: SimpleSphere02 83
+    400478: SimpleSphere02 84
+    400480: SimpleSphere02 85
+    400482: SimpleSphere02 86
+    400484: SimpleSphere02 87
+    400486: SimpleSphere02 88
+    400488: SimpleSphere02 89
+    400490: SimpleSphere02 9
+    400492: SimpleSphere02 90
+    400494: //RootNode
+    2300000: SimpleDome02
+    2300002: SimpleDome02 1
+    2300004: SimpleDome02 10
+    2300006: SimpleDome02 11
+    2300008: SimpleDome02 12
+    2300010: SimpleDome02 13
+    2300012: SimpleDome02 14
+    2300014: SimpleDome02 15
+    2300016: SimpleDome02 16
+    2300018: SimpleDome02 17
+    2300020: SimpleDome02 18
+    2300022: SimpleDome02 19
+    2300024: SimpleDome02 2
+    2300026: SimpleDome02 20
+    2300028: SimpleDome02 21
+    2300030: SimpleDome02 22
+    2300032: SimpleDome02 23
+    2300034: SimpleDome02 24
+    2300036: SimpleDome02 25
+    2300038: SimpleDome02 26
+    2300040: SimpleDome02 27
+    2300042: SimpleDome02 28
+    2300044: SimpleDome02 29
+    2300046: SimpleDome02 3
+    2300048: SimpleDome02 30
+    2300050: SimpleDome02 4
+    2300052: SimpleDome02 5
+    2300054: SimpleDome02 6
+    2300056: SimpleDome02 7
+    2300058: SimpleDome02 8
+    2300060: SimpleDome02 9
+    2300062: SimpleSphere02
+    2300064: SimpleSphere02 1
+    2300066: SimpleSphere02 10
+    2300068: SimpleSphere02 11
+    2300070: SimpleSphere02 12
+    2300072: SimpleSphere02 13
+    2300074: SimpleSphere02 14
+    2300076: SimpleSphere02 15
+    2300078: SimpleSphere02 16
+    2300080: SimpleSphere02 17
+    2300082: SimpleSphere02 18
+    2300084: SimpleSphere02 19
+    2300086: SimpleSphere02 2
+    2300088: SimpleSphere02 20
+    2300090: SimpleSphere02 21
+    2300092: SimpleSphere02 22
+    2300094: SimpleSphere02 23
+    2300096: SimpleSphere02 24
+    2300098: SimpleSphere02 25
+    2300100: SimpleSphere02 26
+    2300102: SimpleSphere02 27
+    2300104: SimpleSphere02 28
+    2300106: SimpleSphere02 29
+    2300108: SimpleSphere02 3
+    2300110: SimpleSphere02 30
+    2300112: SimpleSphere02 31
+    2300114: SimpleSphere02 32
+    2300116: SimpleSphere02 33
+    2300118: SimpleSphere02 34
+    2300120: SimpleSphere02 35
+    2300122: SimpleSphere02 36
+    2300124: SimpleSphere02 37
+    2300126: SimpleSphere02 38
+    2300128: SimpleSphere02 39
+    2300130: SimpleSphere02 4
+    2300132: SimpleSphere02 40
+    2300134: SimpleSphere02 41
+    2300136: SimpleSphere02 42
+    2300138: SimpleSphere02 43
+    2300140: SimpleSphere02 44
+    2300142: SimpleSphere02 45
+    2300144: SimpleSphere02 46
+    2300146: SimpleSphere02 47
+    2300148: SimpleSphere02 48
+    2300150: SimpleSphere02 49
+    2300152: SimpleSphere02 5
+    2300154: SimpleSphere02 50
+    2300156: SimpleSphere02 51
+    2300158: SimpleSphere02 52
+    2300160: SimpleSphere02 53
+    2300162: SimpleSphere02 54
+    2300164: SimpleSphere02 55
+    2300166: SimpleSphere02 56
+    2300168: SimpleSphere02 57
+    2300170: SimpleSphere02 58
+    2300172: SimpleSphere02 59
+    2300174: SimpleSphere02 6
+    2300176: SimpleSphere02 60
+    2300178: SimpleSphere02 61
+    2300180: SimpleSphere02 62
+    2300182: SimpleSphere02 63
+    2300184: SimpleSphere02 64
+    2300186: SimpleSphere02 65
+    2300188: SimpleSphere02 66
+    2300190: SimpleSphere02 67
+    2300192: SimpleSphere02 68
+    2300194: SimpleSphere02 69
+    2300196: SimpleSphere02 7
+    2300198: SimpleSphere02 70
+    2300200: SimpleSphere02 71
+    2300202: SimpleSphere02 72
+    2300204: SimpleSphere02 73
+    2300206: SimpleSphere02 74
+    2300208: SimpleSphere02 75
+    2300210: SimpleSphere02 76
+    2300212: SimpleSphere02 77
+    2300214: SimpleSphere02 78
+    2300216: SimpleSphere02 79
+    2300218: SimpleSphere02 8
+    2300220: SimpleSphere02 80
+    2300222: SimpleSphere02 81
+    2300224: SimpleSphere02 82
+    2300226: SimpleSphere02 83
+    2300228: SimpleSphere02 84
+    2300230: SimpleSphere02 85
+    2300232: SimpleSphere02 86
+    2300234: SimpleSphere02 87
+    2300236: SimpleSphere02 88
+    2300238: SimpleSphere02 89
+    2300240: SimpleSphere02 9
+    2300242: SimpleSphere02 90
+    3300000: SimpleDome02
+    3300002: SimpleDome02 1
+    3300004: SimpleDome02 10
+    3300006: SimpleDome02 11
+    3300008: SimpleDome02 12
+    3300010: SimpleDome02 13
+    3300012: SimpleDome02 14
+    3300014: SimpleDome02 15
+    3300016: SimpleDome02 16
+    3300018: SimpleDome02 17
+    3300020: SimpleDome02 18
+    3300022: SimpleDome02 19
+    3300024: SimpleDome02 2
+    3300026: SimpleDome02 20
+    3300028: SimpleDome02 21
+    3300030: SimpleDome02 22
+    3300032: SimpleDome02 23
+    3300034: SimpleDome02 24
+    3300036: SimpleDome02 25
+    3300038: SimpleDome02 26
+    3300040: SimpleDome02 27
+    3300042: SimpleDome02 28
+    3300044: SimpleDome02 29
+    3300046: SimpleDome02 3
+    3300048: SimpleDome02 30
+    3300050: SimpleDome02 4
+    3300052: SimpleDome02 5
+    3300054: SimpleDome02 6
+    3300056: SimpleDome02 7
+    3300058: SimpleDome02 8
+    3300060: SimpleDome02 9
+    3300062: SimpleSphere02
+    3300064: SimpleSphere02 1
+    3300066: SimpleSphere02 10
+    3300068: SimpleSphere02 11
+    3300070: SimpleSphere02 12
+    3300072: SimpleSphere02 13
+    3300074: SimpleSphere02 14
+    3300076: SimpleSphere02 15
+    3300078: SimpleSphere02 16
+    3300080: SimpleSphere02 17
+    3300082: SimpleSphere02 18
+    3300084: SimpleSphere02 19
+    3300086: SimpleSphere02 2
+    3300088: SimpleSphere02 20
+    3300090: SimpleSphere02 21
+    3300092: SimpleSphere02 22
+    3300094: SimpleSphere02 23
+    3300096: SimpleSphere02 24
+    3300098: SimpleSphere02 25
+    3300100: SimpleSphere02 26
+    3300102: SimpleSphere02 27
+    3300104: SimpleSphere02 28
+    3300106: SimpleSphere02 29
+    3300108: SimpleSphere02 3
+    3300110: SimpleSphere02 30
+    3300112: SimpleSphere02 31
+    3300114: SimpleSphere02 32
+    3300116: SimpleSphere02 33
+    3300118: SimpleSphere02 34
+    3300120: SimpleSphere02 35
+    3300122: SimpleSphere02 36
+    3300124: SimpleSphere02 37
+    3300126: SimpleSphere02 38
+    3300128: SimpleSphere02 39
+    3300130: SimpleSphere02 4
+    3300132: SimpleSphere02 40
+    3300134: SimpleSphere02 41
+    3300136: SimpleSphere02 42
+    3300138: SimpleSphere02 43
+    3300140: SimpleSphere02 44
+    3300142: SimpleSphere02 45
+    3300144: SimpleSphere02 46
+    3300146: SimpleSphere02 47
+    3300148: SimpleSphere02 48
+    3300150: SimpleSphere02 49
+    3300152: SimpleSphere02 5
+    3300154: SimpleSphere02 50
+    3300156: SimpleSphere02 51
+    3300158: SimpleSphere02 52
+    3300160: SimpleSphere02 53
+    3300162: SimpleSphere02 54
+    3300164: SimpleSphere02 55
+    3300166: SimpleSphere02 56
+    3300168: SimpleSphere02 57
+    3300170: SimpleSphere02 58
+    3300172: SimpleSphere02 59
+    3300174: SimpleSphere02 6
+    3300176: SimpleSphere02 60
+    3300178: SimpleSphere02 61
+    3300180: SimpleSphere02 62
+    3300182: SimpleSphere02 63
+    3300184: SimpleSphere02 64
+    3300186: SimpleSphere02 65
+    3300188: SimpleSphere02 66
+    3300190: SimpleSphere02 67
+    3300192: SimpleSphere02 68
+    3300194: SimpleSphere02 69
+    3300196: SimpleSphere02 7
+    3300198: SimpleSphere02 70
+    3300200: SimpleSphere02 71
+    3300202: SimpleSphere02 72
+    3300204: SimpleSphere02 73
+    3300206: SimpleSphere02 74
+    3300208: SimpleSphere02 75
+    3300210: SimpleSphere02 76
+    3300212: SimpleSphere02 77
+    3300214: SimpleSphere02 78
+    3300216: SimpleSphere02 79
+    3300218: SimpleSphere02 8
+    3300220: SimpleSphere02 80
+    3300222: SimpleSphere02 81
+    3300224: SimpleSphere02 82
+    3300226: SimpleSphere02 83
+    3300228: SimpleSphere02 84
+    3300230: SimpleSphere02 85
+    3300232: SimpleSphere02 86
+    3300234: SimpleSphere02 87
+    3300236: SimpleSphere02 88
+    3300238: SimpleSphere02 89
+    3300240: SimpleSphere02 9
+    3300242: SimpleSphere02 90
+    4300000: SimpleSphere02
+    4300002: SimpleSphere02
+    4300004: SimpleDome02
+    4300006: SimpleSphere02
+    4300008: SimpleSphere02
+    4300010: SimpleSphere02
+    4300012: SimpleDome02
+    4300014: SimpleSphere02
+    4300016: SimpleDome02
+    4300018: SimpleSphere02
+    4300020: SimpleSphere02
+    4300022: SimpleDome02
+    4300024: SimpleDome02
+    4300026: SimpleDome02
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
