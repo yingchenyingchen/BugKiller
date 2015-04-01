@@ -1,0 +1,134 @@
+fileFormatVersion: 2
+guid: 17b21ae46c068824d9b06b3f1352efda
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Door-2
+    100004: ID16
+    100006: ID24
+    100008: ID38
+    100010: ID44
+    100012: ID56
+    100014: ID62
+    100016: ID68
+    100018: ID74
+    100020: instance_0
+    100022: instance_1
+    100024: instance_2
+    100026: Interior_Door_Handle
+    100028: Interior_Door_Handle 1
+    400000: //RootNode
+    400002: Door-2
+    400004: ID16
+    400006: ID24
+    400008: ID38
+    400010: ID44
+    400012: ID56
+    400014: ID62
+    400016: ID68
+    400018: ID74
+    400020: instance_0
+    400022: instance_1
+    400024: instance_2
+    400026: Interior_Door_Handle
+    400028: Interior_Door_Handle 1
+    2300000: Door-2
+    2300002: ID16
+    2300004: ID24
+    2300006: ID38
+    2300008: ID44
+    2300010: ID56
+    2300012: ID62
+    2300014: ID68
+    2300016: ID74
+    2300018: Interior_Door_Handle
+    2300020: Interior_Door_Handle 1
+    3300000: Door-2
+    3300002: ID16
+    3300004: ID24
+    3300006: ID38
+    3300008: ID44
+    3300010: ID56
+    3300012: ID62
+    3300014: ID68
+    3300016: ID74
+    3300018: Interior_Door_Handle
+    3300020: Interior_Door_Handle 1
+    4300000: Door-2
+    4300002: ID56
+    4300004: ID62
+    4300006: ID68
+    4300008: ID74
+    4300010: Interior_Door_Handle
+    4300012: ID16
+    4300014: ID24
+    4300016: Interior_Door_Handle
+    4300018: ID38
+    4300020: ID44
+    6400000: Door-2
+    6400002: ID16
+    6400004: ID24
+    6400006: ID38
+    6400008: ID44
+    6400010: ID56
+    6400012: ID62
+    6400014: ID68
+    6400016: ID74
+    6400018: Interior_Door_Handle
+    6400020: Interior_Door_Handle 1
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
