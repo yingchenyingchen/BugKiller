@@ -38,7 +38,7 @@ public class BugAI : MonoBehaviour {
 	void getStimuli(){
 				Collider[] colliders = Physics.OverlapSphere (transform.position, attractantRadius);
 				foreach (Collider c in colliders) {
-						if (c.gameObject.CompareTag ("Attractant"))
+						if (c.gameObject.CompareTag ("FoodAttractant"))
 								_attractants.Add (c.gameObject);
 						else if (c.gameObject.CompareTag ("Deterrent"))
 								_deterrents.Add (c.gameObject);
