@@ -73,6 +73,12 @@
      <Compile Include="Assets\Resources\ProjectAssets\Scripts\ReverseGravity.cs" />
      <Compile Include="Assets\Resources\ProjectAssets\Scripts\make_triangle.cs" />
      <Compile Include="Assets\Resources\ProjectAssets\Scripts\roof_triangle.cs" />
+     <Compile Include="Assets\Sky FX Pack\Scripts\LightBeamsControlScript.cs" />
+     <Compile Include="Assets\Sky FX Pack\Scripts\LookAtBehaviour.cs" />
+     <Compile Include="Assets\Sky FX Pack\Scripts\LookAtCameraBehaviour.cs" />
+     <Compile Include="Assets\Sky FX Pack\Scripts\RayBehavior.cs" />
+     <Compile Include="Assets\Sky FX Pack\Scripts\RotateBehaviour.cs" />
+     <Compile Include="Assets\Sky FX Pack\Scripts\ScrollBehaviour.cs" />
      <None Include="Assets\EasyRoads3D Free\Shaders\EasyRoads3D-Surface.shader" />
      <None Include="Assets\EasyRoads3D Free\Shaders\EasyRoads3D Marker.shader" />
      <None Include="Assets\EasyRoads3D Free\Shaders\EasyRoads3D-Surface alpha.shader" />
