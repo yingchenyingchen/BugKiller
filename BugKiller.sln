@@ -5,7 +5,13 @@ Project("{BC210C92-1487-5C9B-ACB4-AE7946BC4A06}") = "BugKiller", "Assembly-CShar
 EndProject
 Project("{BC210C92-1487-5C9B-ACB4-AE7946BC4A06}") = "BugKiller", "Assembly-CSharp.csproj", "{3F160834-E78A-0467-2449-E44B48C57DC6}"
 EndProject
+Project("{BC210C92-1487-5C9B-ACB4-AE7946BC4A06}") = "BugKiller", "Assembly-CSharp-Editor.csproj", "{BA46D5B7-E458-C21F-267E-73F8B2943F0E}"
+EndProject
 Project("{BC210C92-1487-5C9B-ACB4-AE7946BC4A06}") = "BugKiller", "Assembly-UnityScript-firstpass.unityproj", "{DE3C3055-EABB-0A9F-5F5A-7DCAA88136B3}"
+EndProject
+Project("{BC210C92-1487-5C9B-ACB4-AE7946BC4A06}") = "BugKiller", "Assembly-UnityScript.unityproj", "{FA5E64C1-4DF0-BEE9-5472-F1F7C3F96D60}"
+EndProject
+Project("{BC210C92-1487-5C9B-ACB4-AE7946BC4A06}") = "BugKiller", "Assembly-UnityScript-Editor.unityproj", "{FA7750E2-3E67-E524-3E7F-D637A058E536}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,15 +27,27 @@ Global
 		{3F160834-E78A-0467-2449-E44B48C57DC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F160834-E78A-0467-2449-E44B48C57DC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F160834-E78A-0467-2449-E44B48C57DC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA46D5B7-E458-C21F-267E-73F8B2943F0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA46D5B7-E458-C21F-267E-73F8B2943F0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA46D5B7-E458-C21F-267E-73F8B2943F0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA46D5B7-E458-C21F-267E-73F8B2943F0E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DE3C3055-EABB-0A9F-5F5A-7DCAA88136B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DE3C3055-EABB-0A9F-5F5A-7DCAA88136B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE3C3055-EABB-0A9F-5F5A-7DCAA88136B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE3C3055-EABB-0A9F-5F5A-7DCAA88136B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA5E64C1-4DF0-BEE9-5472-F1F7C3F96D60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA5E64C1-4DF0-BEE9-5472-F1F7C3F96D60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA5E64C1-4DF0-BEE9-5472-F1F7C3F96D60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA5E64C1-4DF0-BEE9-5472-F1F7C3F96D60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA7750E2-3E67-E524-3E7F-D637A058E536}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA7750E2-3E67-E524-3E7F-D637A058E536}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA7750E2-3E67-E524-3E7F-D637A058E536}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA7750E2-3E67-E524-3E7F-D637A058E536}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																																																																																																																														GlobalSection(MonoDevelopProperties) = preSolution
+																																																																																																																																																																											GlobalSection(MonoDevelopProperties) = preSolution
 =======
 																																																																																											GlobalSection(MonoDevelopProperties) = preSolution
 >>>>>>> minorBugFixes

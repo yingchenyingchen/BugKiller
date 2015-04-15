@@ -1,0 +1,148 @@
+fileFormatVersion: 2
+guid: 7ba498215b821824f95b6f2c4043a1a6
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: capsule
+    100002: capsule 1
+    100004: capsule 2
+    100006: capsule 3
+    100008: group_0
+    100010: group_0 1
+    100012: hotdog-and-plate
+    100014: ID102
+    100016: ID14
+    100018: ID22
+    100020: ID28
+    100022: ID34
+    100024: ID40
+    100026: ID61
+    100028: ID67
+    100030: ID73
+    100032: ID79
+    100034: ID83
+    100036: instance_0
+    100038: //RootNode
+    400000: capsule
+    400002: capsule 1
+    400004: capsule 2
+    400006: capsule 3
+    400008: group_0
+    400010: group_0 1
+    400012: hotdog-and-plate
+    400014: ID102
+    400016: ID14
+    400018: ID22
+    400020: ID28
+    400022: ID34
+    400024: ID40
+    400026: ID61
+    400028: ID67
+    400030: ID73
+    400032: ID79
+    400034: ID83
+    400036: instance_0
+    400038: //RootNode
+    2300000: capsule 2
+    2300002: capsule 3
+    2300004: group_0
+    2300006: group_0 1
+    2300008: hotdog-and-plate
+    2300010: ID102
+    2300012: ID14
+    2300014: ID22
+    2300016: ID28
+    2300018: ID61
+    2300020: ID67
+    2300022: ID73
+    3300000: capsule 2
+    3300002: capsule 3
+    3300004: group_0
+    3300006: group_0 1
+    3300008: hotdog-and-plate
+    3300010: ID102
+    3300012: ID14
+    3300014: ID22
+    3300016: ID28
+    3300018: ID61
+    3300020: ID67
+    3300022: ID73
+    4300000: hotdog-and-plate
+    4300002: ID102
+    4300004: capsule
+    4300006: ID14
+    4300008: ID22
+    4300010: ID28
+    4300012: group_0
+    4300014: capsule
+    4300016: ID61
+    4300018: ID67
+    4300020: ID73
+    4300022: group_0
+    6400000: capsule 2
+    6400002: capsule 3
+    6400004: group_0
+    6400006: group_0 1
+    6400008: hotdog-and-plate
+    6400010: ID102
+    6400012: ID14
+    6400014: ID22
+    6400016: ID28
+    6400018: ID61
+    6400020: ID67
+    6400022: ID73
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

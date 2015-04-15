@@ -5,6 +5,8 @@ Project("{BC210C92-1487-5C9B-ACB4-AE7946BC4A06}") = "BugKiller", "Assembly-CShar
 EndProject
 Project("{BC210C92-1487-5C9B-ACB4-AE7946BC4A06}") = "BugKiller", "Assembly-CSharp-vs.csproj", "{3F160834-E78A-0467-2449-E44B48C57DC6}"
 EndProject
+Project("{BC210C92-1487-5C9B-ACB4-AE7946BC4A06}") = "BugKiller", "Assembly-CSharp-Editor-vs.csproj", "{BA46D5B7-E458-C21F-267E-73F8B2943F0E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,11 +21,15 @@ Global
 		{3F160834-E78A-0467-2449-E44B48C57DC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F160834-E78A-0467-2449-E44B48C57DC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F160834-E78A-0467-2449-E44B48C57DC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA46D5B7-E458-C21F-267E-73F8B2943F0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA46D5B7-E458-C21F-267E-73F8B2943F0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA46D5B7-E458-C21F-267E-73F8B2943F0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA46D5B7-E458-C21F-267E-73F8B2943F0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																																																																																																																															GlobalSection(MonoDevelopProperties) = preSolution
+																																																																																																																																																																												GlobalSection(MonoDevelopProperties) = preSolution
 =======
 																																																																																											GlobalSection(MonoDevelopProperties) = preSolution
 >>>>>>> minorBugFixes
