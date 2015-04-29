@@ -8,6 +8,8 @@ public class CockroachAI : MonoBehaviour {
 	public bool canFly;
 	public float attractantRadius;
 	public float speed;
+
+	private NavMeshAgent agent;
 	
 	// Use this for initialization
 	void Start () {
@@ -15,20 +17,30 @@ public class CockroachAI : MonoBehaviour {
 		
 		_attractants = new List<GameObject> ();
 		_deterrents = new List<GameObject> ();
+
+		agent = GetComponent<NavMeshAgent>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		getStimuli ();
 		Vector3 direction = GetAverageStimuliDirection ();
-		if (canFly)
-			moveAnywhere (direction);
-		else
-			moveOnGround (direction);
+
+		if (canFly) {
+						moveAnywhere (direction);
+				} else {
+						moveOnGround (direction);
+				}
+			//Vector3 vvv = new Vector3 (-0.2f, 0.0f, -0.2f);
+			//moveOnGround (direction);
+			//transform.position = new Vector3(Mathf.Lerp(23.1f, 28.5f, Time.time), 7.7f, 2.5f);
+			//Debug.Log(Mathf.Lerp(0.1f, 0.5f, Time.time));
 	}
 	
 	void moveOnGround(Vector3 direction){
-		gameObject.rigidbody.velocity = new Vector3 (direction.x, gameObject.rigidbody.velocity.y, direction.z) * speed;
+		//gameObject.rigidbody.velocity = new Vector3 (direction.x, gameObject.rigidbody.velocity.y, direction.z) * speed;
+		agent.SetDestination (new Vector3 (direction.x, gameObject.rigidbody.velocity.y, direction.z) * speed);
+		//gameObject.rigidbody.angularVelocity
 	}
 	
 	void moveAnywhere(Vector3 direction){

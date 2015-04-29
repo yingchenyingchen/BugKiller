@@ -8,6 +8,7 @@ public class Lightswitch : MonoBehaviour {
 	double zone;
 	float distance;
 	GameObject player;
+	string[] lights;
 	GameObject light;
 	Light intensity;
 	//in Unity3D, gameObject refers to the GameObject the script is attached to.
@@ -19,8 +20,7 @@ public class Lightswitch : MonoBehaviour {
 		zone = 2.5;
 		distance = 100;
 		player = GameObject.FindGameObjectsWithTag("Deterrent")[0];
-		light = GameObject.Find(light_name);
-		intensity = light.GetComponent<Light>();
+		lights = light_name.Split(',');
 	}
 	
 	// Update is called once per frame
@@ -33,7 +33,13 @@ public class Lightswitch : MonoBehaviour {
 			//when the player is near and e is pressed
 			if (Input.GetKeyDown(KeyCode.Z))
 			{
-				intensity.intensity = on ? 0f : 1.5f;
+				float brightness = (lights.Length > 1) ? 2.5f : 1.5f;
+				foreach (string str in lights)
+				{
+					light = GameObject.Find(str);
+					intensity = light.GetComponent<Light>();
+					intensity.intensity = on ? 0f : brightness;
+				}
 				on = !on;
 				gameObject.transform.Rotate(new Vector3 (180f, 0f, 0f));
 			}

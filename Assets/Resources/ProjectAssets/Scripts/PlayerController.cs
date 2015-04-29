@@ -11,13 +11,12 @@ public class PlayerController : MonoBehaviour {
 	private MouseLook _mouseLook;
 	private FPSInputController _fpsController;
 	private CharacterMotor _characterMotor;
-	private bool waitingOnEquip;
+	public bool waitingOnEquip;
 	private static KeyCode[] keyCodes;
 	private RaycastHit whichBugsHit;
 	public Equipment whichEquipment;
 	public bool rightClicked;
 
-		
 	// Use this for initialization
 	void Start () {
 		if(keyCodes==null)
@@ -58,28 +57,44 @@ public class PlayerController : MonoBehaviour {
 		KillBugs ();
 	}
 
+
 	//Kill bugs when certain keys are clicked. 
 	void KillBugs(){
-		
-		//var rotSpeed = 60; 
+
 		//Vector3 v3 = new Vector3 (0,90,0);
 		Color c = new Color(0.25f,1.41f,1.78f);
-		//whichBugshit
 		rightClicked = Input.GetMouseButton (1);
-		if((whichEquipment is SprayCan) && rightClicked )
-		{
+			if((whichEquipment is SprayCan) && rightClicked )
+			{
 			//if(Physics.SphereCast (transform.position, 400f, transform.forward, out whichBugsHit, Mathf.Infinity, 1<< LayerMask.NameToLayer("Bugs")))
 			//int b = Physics.SphereCastAll (transform.position, 800f, transform.forward, 800f, 1<< LayerMask.NameToLayer("Bugs")).Length;
-			
-			if(Physics.SphereCast (transform.position, 5f, transform.forward,out whichBugsHit, 3f, 1<< LayerMask.NameToLayer("Bugs"))){
+
+			if(Physics.SphereCast (transform.position, 20f, transform.forward,out whichBugsHit, 10f, 1<< LayerMask.NameToLayer("Bugs"))){
 				//if(b!=0){
-				GameObject go = whichBugsHit.collider.gameObject; //transform.Rotate(v3);
-				//go.transform.Rotate(v3);
+				GameObject go = whichBugsHit.collider.gameObject; 
+				//Destroy(go.GetComponent("BedBugAI"));
 				go.renderer.material.color = c;
-				Destroy(whichBugsHit.collider.gameObject, 5f);
-				
+			
+				//Ani.Mate.To(gameObject.transform, 2, {"position": new Vector3(0,20,0)});
+				//Hashtable props = new Hashtable();
+				//props.Add("position", new Vector3(0,20,0));
+				//Ani.Mate.To(transform, 2, props);
+
+				// Move object by 10 units on the x axis
+				//Ani.Mate.By(transform, 3, {"localScale": new Vector3(10,0,0)});
+
+				//Hashtable p = new Hashtable();
+				//p.Add("localScale", new Vector3(10,0,0) );
+				//Ani.Mate.To(transform, 2, props);
+				//currentTransform.parent.animation.Play("BounceTest4");
+				Debug.Log("Hello before");
+				//go.transform.parent.gameObject.GetComponent<Animation>().Play();
+				//go.GetComponent<Animation>().Play("ScaleAnimation");
+				Debug.Log("Hello after");
+				Destroy(whichBugsHit.collider.gameObject, 3f);
+
+				}
 			}
-		}
 	}
 
 	private void HandleHandEquip()
@@ -92,6 +107,7 @@ public class PlayerController : MonoBehaviour {
 			hud.SetQuickItemSelection((int)char.GetNumericValue (codeString[codeString.Length -1]));
 			StartCoroutine(waitForEquip(code, hud.GetQuickItemSelected()));
 			whichEquipment = hud.GetQuickItemSelected();
+
 		}
 	}
 
